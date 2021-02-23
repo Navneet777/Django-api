@@ -14,9 +14,9 @@ class EmployeeAPIView(generics.GenericAPIView, mixins.ListModelMixin, mixins.Cre
     serializer_class = Employee_ModelSerializer
     queryset = Employee_Model.objects.all()
     lookup_field = 'employee_id'
-
-    authentication_classes = [BasicAuthentication]
-    #authentication_classes = [TokenAuthentication]
+    # Generated token bcae7daf6eba444efebd03f7e0a15e2cb73fa155 for user navneet
+    # authentication_classes = [BasicAuthentication]
+    authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
 
     def get(self, request, employee_id = None):

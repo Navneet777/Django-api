@@ -7,5 +7,6 @@ urlpatterns = [
     path('products/',include('Product.urls')),
     path('movies/',include('Movie_cbv.urls')),
     path('gamestore/',include('Gamestore_gcbv.urls')),
-    path('employee/',include('Employee_auth.urls'))
+    path('employee/',include('Employee_auth.urls')),
+    path('drf_docs_app/',include('drf_docs_app.urls'))
 ]

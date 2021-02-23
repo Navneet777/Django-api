@@ -31,7 +31,8 @@ INSTALLED_APPS = [
     'Product', # api with decorator used
     'Movie_cbv', # class based view
     'Gamestore_gcbv', # generic class based view with mixins
-    'Employee_auth'
+    'Employee_auth', # generic advance class based view with mixins and Authentication
+    'drf_docs_app', # drf official documentation app implementation
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,11 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ]
+}
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
 }
 
 ROOT_URLCONF = 'user_login_api.urls'
