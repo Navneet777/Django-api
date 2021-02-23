@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'Gamestore_gcbv', # generic class based view with mixins
     'Employee_auth', # generic advance class based view with mixins and Authentication
     'drf_docs_app', # drf official documentation app implementation
+    'crud_without_rest', #crud operation without rest framwork
 ]
 
 MIDDLEWARE = [

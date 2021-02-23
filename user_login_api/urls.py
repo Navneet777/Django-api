@@ -8,5 +8,6 @@ urlpatterns = [
     path('movies/',include('Movie_cbv.urls')),
     path('gamestore/',include('Gamestore_gcbv.urls')),
     path('employee/',include('Employee_auth.urls')),
-    path('drf_docs_app/',include('drf_docs_app.urls'))
+    path('drf_docs_app/',include('drf_docs_app.urls')),
+    path('without-drf-crud/',include('crud_without_rest.urls'))
 ]

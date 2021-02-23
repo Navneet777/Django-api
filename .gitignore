@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
+*__pycache__/
+*migrations/
+*.pyc
 *$py.class
 
 # C extensions
@@ -95,20 +96,4 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
 /site
-
-# mypy
-.mypy_cache/
-demo/react-spa/node_modules/
-demo/react-spa/yarn.lock
-
-# Visual Studio Code
-.vscode/
